@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDB2138E-1139-4267-A43B-5100049C168B}</ProjectGuid>
+    <ProjectGuid>{CAB87C5D-162D-46EE-A73F-DF499349623C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laba4</RootNamespace>
-    <AssemblyName>Laba4</AssemblyName>
+    <RootNamespace>Laba9</RootNamespace>
+    <AssemblyName>Laba9</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Human.cs" />
+    <Compile Include="Operator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

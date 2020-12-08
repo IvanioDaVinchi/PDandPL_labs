@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDB2138E-1139-4267-A43B-5100049C168B}</ProjectGuid>
+    <ProjectGuid>{5275FA01-A149-4EE8-9F00-7A6E77374365}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laba4</RootNamespace>
-    <AssemblyName>Laba4</AssemblyName>
+    <RootNamespace>Laba6</RootNamespace>
+    <AssemblyName>Laba6</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

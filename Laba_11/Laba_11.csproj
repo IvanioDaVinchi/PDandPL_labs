@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDB2138E-1139-4267-A43B-5100049C168B}</ProjectGuid>
+    <ProjectGuid>{D6845D97-D0D9-4193-8655-CB47705DBF7C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laba4</RootNamespace>
-    <AssemblyName>Laba4</AssemblyName>
+    <RootNamespace>Laba_11</RootNamespace>
+    <AssemblyName>Laba_11</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharArray.cs" />
+    <Compile Include="Circle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortGlasnii.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

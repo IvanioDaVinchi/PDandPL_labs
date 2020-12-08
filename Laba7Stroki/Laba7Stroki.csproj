@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDB2138E-1139-4267-A43B-5100049C168B}</ProjectGuid>
+    <ProjectGuid>{353A37D4-075B-46C9-9D05-88EA4F82FE84}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laba4</RootNamespace>
-    <AssemblyName>Laba4</AssemblyName>
+    <RootNamespace>Laba7Stroki</RootNamespace>
+    <AssemblyName>Laba7Stroki</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Poet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,14 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDB2138E-1139-4267-A43B-5100049C168B}</ProjectGuid>
+    <ProjectGuid>{811CC6A0-0E69-4922-8436-53A06F76A6B7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Laba4</RootNamespace>
-    <AssemblyName>Laba4</AssemblyName>
+    <RootNamespace>RegexLaba</RootNamespace>
+    <AssemblyName>RegexLaba</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegexHtml.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
