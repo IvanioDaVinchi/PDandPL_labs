@@ -12,10 +12,13 @@ namespace PDandPL
         public override string Message => _message;
         public OverFlowProgression(string message) : base(message)
         {
-            _message = message;
+            //_message = message;
+            Console.WriteLine( message);
         }
         public OverFlowProgression()
-        { }
+        {
+
+        }
 
     }
 }

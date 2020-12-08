@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba10_2", "laba10_2\laba10
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexLaba", "RegexLaba\RegexLaba.csproj", "{811CC6A0-0E69-4922-8436-53A06F76A6B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDandPL_laba13", "\\server\UserData$\1184065\Desktop\PDandPL\PDandPL_laba13.csproj", "{790DE7B2-2336-47AB-9003-2BE248E1A561}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDandPL_laba13", "PDandPL_laba13\PDandPL_laba13.csproj", "{790DE7B2-2336-47AB-9003-2BE248E1A561}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

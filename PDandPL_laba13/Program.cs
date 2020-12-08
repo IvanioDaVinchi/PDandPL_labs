@@ -10,7 +10,7 @@ namespace PDandPL
     {
         static void Main(string[] args)
         {
-            ArithmeticProgression progression = new ArithmeticProgression(5,8);
+            ArithmeticProgression progression = new ArithmeticProgression(7,20);
             progression.PrintArithmeticProgression();
             Console.WriteLine($"Sum progression element = {progression.SumElementsProgression()}");
             Console.Write("Enter index: ");

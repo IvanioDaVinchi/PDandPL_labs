@@ -10,11 +10,33 @@ namespace PDandPL
     {
         int d = 0;
         int n = 0;
+        public int N
+        {
+            get
+            {
+                return n;
+            }
+            set
+            {
+                if(value > 9)
+                {
+                    throw new OverFlowProgression("u so bad boy!!");
+                }
+            }
+        }
+
         public List<int> arithmeticList = new List<int>();
         public ArithmeticProgression(int d, int n)
         {
             this.d = d;
-            this.n = --n;
+            try
+            {
+                N = --n;
+            }
+            catch (OverFlowProgression e)
+            {
+                Console.WriteLine(e.Message);
+            }
             SetProgressionElement();
         }
         private void SetProgressionElement()
@@ -22,10 +44,6 @@ namespace PDandPL
             arithmeticList.Add(d);
             for(int i = 0; i < n; i++)
             {
-                if(i >= 9)
-                {
-                    throw new OverFlowProgression("Как не культурно!!");
-                }
                 arithmeticList.Add(arithmeticList[i] + d);
             }
         }
@@ -44,11 +62,15 @@ namespace PDandPL
         }
         public int GetNElement(int index)
         {
-            if (index > arithmeticList.Count())
+            int element = 0;
+            try
             {
-                throw new OverFlowProgression();
+                element = arithmeticList[--index];
             }
-            int element = arithmeticList[--index];
+            catch (ArgumentOutOfRangeException e)
+            {
+                Console.WriteLine(e.Message);
+            }
             return element;
         }
     }

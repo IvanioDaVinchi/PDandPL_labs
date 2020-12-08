@@ -57,13 +57,9 @@ namespace RegexLaba
             {
                 if (pattern.IsMatch(mas[i]))
                 {
-                    string size;
+                    string size = "";
                     while (mas.Length != 0)
                     {
-                        if()
-                        {
-
-                        }
                         size = pattern.Match(mas[i]).Groups[1].Value;
                     }
                     string fontsize = $@"<Font size=""{size}""";
