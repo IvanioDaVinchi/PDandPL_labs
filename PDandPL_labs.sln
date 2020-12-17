@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegexLaba", "RegexLaba\Rege
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDandPL_laba13", "PDandPL_laba13\PDandPL_laba13.csproj", "{790DE7B2-2336-47AB-9003-2BE248E1A561}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba14", "Laba14\Laba14.csproj", "{A692C77D-3F5E-43DA-BD0A-E8A0179917C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{790DE7B2-2336-47AB-9003-2BE248E1A561}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{790DE7B2-2336-47AB-9003-2BE248E1A561}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{790DE7B2-2336-47AB-9003-2BE248E1A561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A692C77D-3F5E-43DA-BD0A-E8A0179917C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A692C77D-3F5E-43DA-BD0A-E8A0179917C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A692C77D-3F5E-43DA-BD0A-E8A0179917C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A692C77D-3F5E-43DA-BD0A-E8A0179917C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
