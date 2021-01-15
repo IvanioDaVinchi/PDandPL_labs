@@ -8,6 +8,8 @@ namespace Laba14
 {
     public class Fight
     {
+        public int winPlayerOne = 0;
+        public int winPlayerTwo = 0;
         public void FirstCharecterHit(CharacterOne one, CharacterTwo two)
         {
             two.countLife -= one.Hit();
@@ -25,14 +27,17 @@ namespace Laba14
             two.Oglyshenie += Displayed;
             int index = 0;
             while (true)
+
+                
             {
-                index++;
-                if(index % 2 != 0)
+                //index++;  
+                if(++index % 2 != 0)
                 {
                     FirstCharecterHit(one, two);
                     if(two.Dead())
                     {
                         Console.WriteLine("Второй персонаж умер! Первый победил!!");
+                        winPlayerOne++;
                         break;
                     }
                     if(one.FreezeHit())
@@ -46,6 +51,7 @@ namespace Laba14
                     if (one.Dead())
                     {
                         Console.WriteLine("Первый персонаж умер! Второй победил!!");
+                        winPlayerTwo++;
                         break;
                     }
                     if (two.OglyshenieHit())
@@ -53,8 +59,6 @@ namespace Laba14
                         index++;
                     }
                 }
-                //Console.WriteLine(one.countLife);
-                //Console.WriteLine(two.countLife);
             }
         }
         public void FightWnenCharacterTwoStartedFirst()
@@ -74,11 +78,13 @@ namespace Laba14
                     if (two.Dead())
                     {
                         Console.WriteLine("Второй персонаж умер! Первый победил!!");
+                        winPlayerOne++;
                         break;
                     }
                     if (one.FreezeHit())
                     {
                         index++;
+                        FirstCharecterHit(one, two);
                     }
                 }
                 else
@@ -87,6 +93,7 @@ namespace Laba14
                     if (one.Dead())
                     {
                         Console.WriteLine("Первый персонаж умер! Второй победил!!");
+                        winPlayerTwo++;
                         break;
                     }
                     if (two.OglyshenieHit())
@@ -102,6 +109,10 @@ namespace Laba14
             {
                 FightWnenCharacterOneStartedFirst();
             }
+            Console.WriteLine("Первый выйграл - " + winPlayerOne);
+            Console.WriteLine("Второй выйграл - " + winPlayerTwo);
+            winPlayerOne = 0;
+            winPlayerTwo = 0;
         }
         public void SecondFight()
         {
@@ -109,6 +120,10 @@ namespace Laba14
             {
                 FightWnenCharacterTwoStartedFirst();
             }
+            Console.WriteLine("Первый выйграл - " + winPlayerOne);
+            Console.WriteLine("Второй выйграл - " + winPlayerTwo);
+            winPlayerOne = 0;
+            winPlayerTwo = 0;
         }
         public void Displayed(string mes)
         {
