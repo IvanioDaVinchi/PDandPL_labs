@@ -6,93 +6,79 @@ using System.Threading.Tasks;
 
 namespace laba_15._2
 {
+    [Serializable]
     public class Game
     {
-        public int CountPeasants
+        private int countGold = 10;
+        private int countPeasants = 20;
+        private double proccentSpawnPeasants = 5;
+        private int limitPeasants = 100;
+        public delegate void EventPrint(string Messege);
+        public event EventPrint Spawning;
+        public event EventPrint Died;
+        public event EventPrint Limit;
+        public event EventPrint NotEnoughGold;
+
+        public void IncreaseTax()
         {
-            get
-            {
-                return CountPeasants;
-            }
-            set
-            {
-                CountPeasants = value;
-            }
+            countGold += 1;
+            proccentSpawnPeasants -= 0.2;
+            if(CheckOnDied())
+            SpawnPeasants();
         }
-        public int CountGold
+        public void ReduceTax()
         {
-            get
-            {
-                return CountGold;
-            }
-            set
-            {
-                CountGold = value;
-            }
-        }
-        public double ProccentSpawnPeasants
-        {
-            get
-            {
-                return ProccentSpawnPeasants;
-            }
-            set
-            {
-                ProccentSpawnPeasants = value;
-            }
-        }
-        public int LimitPeasants
-        {
-            get
-            {
-                return LimitPeasants;
-            }
-            set
-            {
-                LimitPeasants = value;
-            }
-        }
-        public void RiseGold(int delta)
-        {
-            CountGold += delta;
-        }
-        public void DeclineGold(int delta)
-        {
-            CountGold -= delta;
-        }
-        public void RisePeasants(int delta)
-        {
-            CountPeasants += delta;
-        }
-        public void DeclinePeasants(int delta)
-        {
-            CountPeasants -= delta;
-        }
-        public void RiseTax(int delta)
-        {
-            CountGold += 1;
-            ProccentSpawnPeasants -= 0.2;
-        }
-        public void DeclineTax(int delta)
-        {
-            CountGold -= delta;
-            ProccentSpawnPeasants += 0.2;
+            countGold -= 1;
+            proccentSpawnPeasants += 0.2;
+            if (CheckOnDied())
+                SpawnPeasants();
         }
         public void BuildShallow()
         {
-            CountGold -= 10;
-            LimitPeasants += 4;
+            countGold -= 10;
+            limitPeasants += 4;
+            if (CheckOnDied())
+                SpawnPeasants();
         }
         public void GiveFreeRein()
         {
-            CountPeasants -= 1;
-            ProccentSpawnPeasants += 5;
+            countPeasants -= 1;
+            proccentSpawnPeasants += 5;
+            if (CheckOnDied())
+                SpawnPeasants();
         }
         public void HoldCelebration()
         {
-            CountPeasants += 1;
-            ProccentSpawnPeasants += 1;
+            if (countGold > 20)
+            {
+                countGold -= 20;
+                countPeasants += 1;
+                proccentSpawnPeasants += 1;
+                if (CheckOnDied())
+                    SpawnPeasants();
+            }
+            else
+                NotEnoughGold?.Invoke("!! У вас не достаточно золота !!");
+            
         }
-
+        private void SpawnPeasants()
+        {
+            countPeasants += Convert.ToInt32(countPeasants * proccentSpawnPeasants / 100);
+            Spawning?.Invoke("!! У вас прибавление крестьян !!");
+        }
+        private bool CheckOnDied()
+        {
+            if (countGold <= 0 || countPeasants <= 0)
+            {
+                Died?.Invoke("Вы проиграли!");
+                return false;
+            }
+            else
+                return true;
+                
+        }
+        public int GetCountGold() => countGold;
+        public int GetCountPeasants() => countPeasants;
+        public int GetLimitPeasants() => limitPeasants;
     }
 }
