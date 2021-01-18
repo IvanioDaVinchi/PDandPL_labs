@@ -5,8 +5,7 @@ using System.Runtime.Serialization.Json;
 namespace laba_15._2
 {
     public class SaveManager
-    {
-        
+    { 
         public void BinarySave(Game objectGame)
         {
             using (var fs = new FileStream($"{Directory.GetCurrentDirectory()}\\saveGameFeodal.bin", FileMode.OpenOrCreate))

@@ -18,8 +18,19 @@ namespace Laba15Dop
                 serializer.WriteObject(fs, list);
             }
         }
+        static List<Slave> Deserializ()
+        {
+            List<Slave> list = new List<Slave>();
+            using (var fs = new FileStream($"{Directory.GetCurrentDirectory()}\\slaveFile.json", FileMode.OpenOrCreate))
+            {
+                var serializer = new DataContractJsonSerializer(typeof(List<Slave>));
+                list = serializer.ReadObject(fs)as List<Slave>;
+            }
+            return list;
+        }
         static void Main(string[] args)
         {
+            List<Shop> shops = new List<Shop>();
             List<Slave> list = new List<Slave>();
             list.Add(new Slave("Vlad", "112233"));
             list.Add(new Slave("Inokentii", "212233"));
