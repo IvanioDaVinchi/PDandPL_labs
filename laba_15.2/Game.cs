@@ -9,6 +9,7 @@ namespace laba_15._2
     [Serializable]
     public class Game
     {
+        public int winCount;
         private int countGold = 10;
         private int countPeasants = 20;
         private double proccentSpawnPeasants = 5;
@@ -18,11 +19,15 @@ namespace laba_15._2
         public event EventPrint Died;
         public event EventPrint Limit;
         public event EventPrint NotEnoughGold;
+        public event EventPrint Win;
 
         public void IncreaseTax()
         {
             countGold += 1;
-            proccentSpawnPeasants -= 0.2;
+            if (proccentSpawnPeasants != 0)
+                proccentSpawnPeasants -= 0.2;
+            else
+                Died?.Invoke("Ваш процент рождаемости упал до 0, вы проиграли");
             if(CheckOnDied())
             SpawnPeasants();
         }
@@ -64,6 +69,10 @@ namespace laba_15._2
         private void SpawnPeasants()
         {
             countPeasants += Convert.ToInt32(countPeasants * proccentSpawnPeasants / 100);
+            if(countPeasants >= winCount)
+            {
+                Win?.Invoke("Отлично! Вы победили! Из вас вышел отличный феодал! ");
+            }
             Spawning?.Invoke("!! У вас прибавление крестьян !!");
         }
         private bool CheckOnDied()

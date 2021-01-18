@@ -11,12 +11,17 @@ namespace laba_15._2
         static bool gameOver = false;
         static void GamePlay()
         {
+            Console.WriteLine("ОО феодал введи свою мечту в количестве крестьян!");
+            int countPeasantsForWin = int.Parse(Console.ReadLine());
             var game = new Game();
+            game.winCount = countPeasantsForWin;
             game.Spawning += PrintMessege;
             game.Limit += PrintMessege;
             game.Limit += Died;
             game.Died += PrintMessege;
             game.Died += Died;
+            game.Win += PrintMessege;
+            game.Win += Died;
             game.NotEnoughGold += PrintMessege;
             while (gameOver == false)
             {

@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba15", "Laba15\Laba15.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba_15.2", "laba_15.2\laba_15.2.csproj", "{9818B3FD-BC89-48F1-8567-C26651F295B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba15Dop", "Laba15Dop\Laba15Dop.csproj", "{B3D207CA-6A31-4993-8CC7-E85F0F63AFF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{9818B3FD-BC89-48F1-8567-C26651F295B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9818B3FD-BC89-48F1-8567-C26651F295B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9818B3FD-BC89-48F1-8567-C26651F295B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3D207CA-6A31-4993-8CC7-E85F0F63AFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D207CA-6A31-4993-8CC7-E85F0F63AFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D207CA-6A31-4993-8CC7-E85F0F63AFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D207CA-6A31-4993-8CC7-E85F0F63AFF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
