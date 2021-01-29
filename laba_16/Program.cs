@@ -42,7 +42,15 @@ namespace laba_16
             stack.Push('B');
             stack.Push('*');
             stack.Push('C');
-            
+            Console.WriteLine("Префиксная запись!");
+            for(int i = 0; i < stack.Count; i++)
+            {
+                if (stack.ElementAt(i) == '+')
+                {
+                    //stack.
+                    stack.Push('+');
+                }
+            }
         }
         static void Main(string[] args)
         {
