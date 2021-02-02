@@ -35,6 +35,7 @@ namespace Laba_16._2
             {
                 Console.WriteLine(item);
             }
+            Console.WriteLine();
             Console.ReadLine();
         }
     }
