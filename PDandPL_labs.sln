@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba_16", "laba_16\laba_16.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba_16.2", "Laba_16.2\Laba_16.2.csproj", "{77091C8E-CE0C-4A13-815F-69A11B33627A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeWithLinqAndXML", "PracticeWithLinqAndXML\PracticeWithLinqAndXML.csproj", "{8E528CF6-DB1C-479E-B55D-3963D6C5DE8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{77091C8E-CE0C-4A13-815F-69A11B33627A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77091C8E-CE0C-4A13-815F-69A11B33627A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77091C8E-CE0C-4A13-815F-69A11B33627A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E528CF6-DB1C-479E-B55D-3963D6C5DE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E528CF6-DB1C-479E-B55D-3963D6C5DE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E528CF6-DB1C-479E-B55D-3963D6C5DE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E528CF6-DB1C-479E-B55D-3963D6C5DE8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
