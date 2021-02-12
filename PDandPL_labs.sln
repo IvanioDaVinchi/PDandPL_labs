@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laba_16.2", "Laba_16.2\Laba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeWithLinqAndXML", "PracticeWithLinqAndXML\PracticeWithLinqAndXML.csproj", "{8E528CF6-DB1C-479E-B55D-3963D6C5DE8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba_18", "laba_18\laba_18.csproj", "{EE51BB5F-4B43-4E7C-B3ED-FF6B676FD345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba_18_2", "laba_18_2\laba_18_2.csproj", "{6736237A-1190-42FC-8473-4F907281FD8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +121,14 @@ Global
 		{8E528CF6-DB1C-479E-B55D-3963D6C5DE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E528CF6-DB1C-479E-B55D-3963D6C5DE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E528CF6-DB1C-479E-B55D-3963D6C5DE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE51BB5F-4B43-4E7C-B3ED-FF6B676FD345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE51BB5F-4B43-4E7C-B3ED-FF6B676FD345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE51BB5F-4B43-4E7C-B3ED-FF6B676FD345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE51BB5F-4B43-4E7C-B3ED-FF6B676FD345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6736237A-1190-42FC-8473-4F907281FD8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6736237A-1190-42FC-8473-4F907281FD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6736237A-1190-42FC-8473-4F907281FD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6736237A-1190-42FC-8473-4F907281FD8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
