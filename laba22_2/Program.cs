@@ -8,6 +8,7 @@ namespace laba22_2
 {
     static class Program
     {
+
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
