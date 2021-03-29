@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba22", "laba22\laba22.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba22_2", "laba22_2\laba22_2.csproj", "{D1FD5AEE-883E-457A-9D9E-F4CDD14F6286}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laba_Paint", "laba_Paint\laba_Paint.csproj", "{611B40CD-6017-4F09-A719-D38DA82F4941}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,10 @@ Global
 		{D1FD5AEE-883E-457A-9D9E-F4CDD14F6286}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1FD5AEE-883E-457A-9D9E-F4CDD14F6286}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1FD5AEE-883E-457A-9D9E-F4CDD14F6286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{611B40CD-6017-4F09-A719-D38DA82F4941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{611B40CD-6017-4F09-A719-D38DA82F4941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{611B40CD-6017-4F09-A719-D38DA82F4941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{611B40CD-6017-4F09-A719-D38DA82F4941}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
