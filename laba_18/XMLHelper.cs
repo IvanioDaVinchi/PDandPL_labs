@@ -24,19 +24,22 @@ namespace laba_18
         public void WriteInCenter(Reader reader)
         {
             XDocument doc = XDocument.Load("Readers.xml");
-            XElement elements = doc.Element("readers");
-            XElement newElement = new XElement("reader");
-            XAttribute attribute = new XAttribute("numberReaderTicket", reader.numberReaderTicket);
-            XElement name = new XElement("name", reader.name);
-            XElement nameBook = new XElement("nameBook", reader.nameBook);
-            XElement timeReturn = new XElement("timeOfreturn", reader.timeOfreturn);
-            newElement.Add(attribute);
-            newElement.Add(name);
-            newElement.Add(nameBook);
-            newElement.Add(timeReturn);
-            
-            doc.Add(elements);
-            doc.Save("Readers.xml");
+            int lenth = doc.Element(XName.Get("readers")).Elements().Count();
+            doc.Element(XName.Get("readers")).
+
+            //XElement elements = doc.Element("readers");
+            //XElement newElement = new XElement("reader");
+            //XAttribute attribute = new XAttribute("numberReaderTicket", reader.numberReaderTicket);
+            //XElement name = new XElement("name", reader.name);
+            //XElement nameBook = new XElement("nameBook", reader.nameBook);
+            //XElement timeReturn = new XElement("timeOfreturn", reader.timeOfreturn);
+            //newElement.Add(attribute);
+            //newElement.Add(name);
+            //newElement.Add(nameBook);
+            //newElement.Add(timeReturn);
+
+            //doc.Add(elements);
+            //doc.Save("Readers.xml");
         }
         public XDocument GetDogsList()
         {

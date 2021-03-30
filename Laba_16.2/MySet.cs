@@ -33,10 +33,13 @@ namespace Laba_16._2
             set1.hashSet.UnionWith(set2.hashSet);
             return set1.hashSet;
         }
-        public static HashSet<T> operator ++ (MySet<T> set,T value)
+        public static MySet<T> operator ++(MySet<T> set1)
         {
-            set.hashSet.Add(value);
-            return set.hashSet;
+            Random rnd = new Random();
+            var newSet = (dynamic)set1;
+            newSet.hashSet.Add(rnd.Next(1,20));
+            set1 = (dynamic)newSet;
+            return set1;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace laba_18_2
     {
         static void Main(string[] args)
         {
-
+            TVShop shop = new TVShop();
         }
     }
 }
