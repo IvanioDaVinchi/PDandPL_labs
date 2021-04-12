@@ -20,7 +20,7 @@ namespace laba_27_29_WithVlad_
 
         private void MenedgerBtn_Click(object sender, EventArgs e)
         {
-
+            new ManagerForm().Show(); 
         }
 
         private void AdminBtn_Click(object sender, EventArgs e)

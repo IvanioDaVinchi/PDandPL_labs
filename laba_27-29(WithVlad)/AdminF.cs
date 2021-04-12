@@ -65,7 +65,7 @@ namespace laba_27_29_WithVlad_
         private void button2_Click(object sender, EventArgs e)
         {
             var flower = new Flowers();
-            flower.Id = int.Parse(textBox3.Text);
+            flower.id = int.Parse(textBox3.Text);
             flower.FlowerName = textBox4.Text;
             flower.Photo = textBox5.Text;
             flower.DateReleas = textBox6.Text;

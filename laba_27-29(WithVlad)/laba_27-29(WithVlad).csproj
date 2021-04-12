@@ -72,6 +72,13 @@
     <Compile Include="AdminF.Designer.cs">
       <DependentUpon>AdminF.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerForm.Designer.cs">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableClass\PreOrders.cs" />
     <Compile Include="TableClass\DBContext.cs" />
     <Compile Include="TableClass\Flowers.cs" />
     <Compile Include="TableClass\FlowersInShop.cs" />
@@ -89,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerForm.resx">
+      <DependentUpon>ManagerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -15,6 +15,7 @@ namespace laba_27_29_WithVlad_
 
         public DbSet<Flowers> Flowers { get; set; }
         public DbSet<Sells> Sells { get; set; }
+        public DbSet<PreOrders> PreOrders { get; set; }
         public DbSet<FlowersInShop> FlowersInShop { get; set; }
     }
 }

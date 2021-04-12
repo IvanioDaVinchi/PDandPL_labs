@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace laba_27_29_WithVlad_
 {
-    public class Flowers
+    public class PreOrders
     {
         public int id { get; set; }
-        public string FlowerName { get; set; }
-        public string Photo { get; set; }
-        public string DateReleas { get; set; }
+        public string idFlower { get; set; }
+        public string FIO { get; set; }
     }
 }
